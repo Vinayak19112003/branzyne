@@ -7,6 +7,9 @@ import PageTransitionWrapper from "@/components/PageTransitionWrapper";
 export const metadata: Metadata = {
   title: "Branzyne",
   description: "Branzyne",
+  icons: {
+    icon: "/logo/favicon.png",
+  },
 };
 
 export default function RootLayout({
