@@ -7,7 +7,8 @@ interface TransitionLinkProps extends LinkProps {
   children: React.ReactNode
   className?: string
   href: string
-  [key: string]: any
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void
+  onKeyDown?: (e: React.KeyboardEvent<HTMLAnchorElement>) => void
 }
 
 export default function TransitionLink({ href, children, className = '', onClick, ...props }: TransitionLinkProps) {

@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 import Logo from '@/component/logo-dark'
 import ScrollAnimationWrapper from '@/components/ScrollAnimationWrapper'
 
@@ -158,9 +159,9 @@ const Footer = () => {
                             <h3 className="text-white font-medium mb-4 text-lg">Pages</h3>
                             <ul className="space-y-2 text-base">
                                 <li>
-                                    <a href="/" className="text-gray-400 hover:text-purple-500 transition-colors">
+                                    <Link href="/" className="text-gray-400 hover:text-purple-500 transition-colors">
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a href="/about" className="text-gray-400 hover:text-purple-500 transition-colors">
