@@ -316,7 +316,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
                 <TransitionLink
                   href={item.href}
                   onClick={e => handleClick(e, index)}
-                  onKeyDown={(e: React.KeyboardEvent<HTMLAnchorElement>) => handleKeyDown(e, index)}
+                  onKeyDown={(e:any) => handleKeyDown(e, index)}
                   className="outline-none py-[0.4em] px-[1em] inline-block"
                 >
                   {item.label}

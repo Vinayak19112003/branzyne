@@ -1,5 +1,3 @@
-"use client"
-
 import { useEffect, useRef, useState } from "react";
 import Logo from "./logo-dark";
 import LogoLight from "./logo-light";
@@ -22,14 +20,12 @@ export default function Header() {
   const [activePath, setActivePath] = useState(pathname);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const items = [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/home" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
   useEffect(() => {
-    setMounted(true);
     if (headerRef.current) {
       gsap.set(headerRef.current, { opacity: 1 });
     }
@@ -37,7 +33,7 @@ export default function Header() {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 640);
+      setIsSmallScreen(window.innerWidth < 640); // 640px is the 'sm' breakpoint in Tailwind
     };
 
     checkScreenSize();
@@ -65,7 +61,7 @@ export default function Header() {
       }`}
     >
       <TransitionLink className="cursor-pointer" href="/">
-        {mounted && isSmallScreen ? (
+        {isSmallScreen ? (
             <Logo width={150} height={45} />
         ) : (
           <Logo />
