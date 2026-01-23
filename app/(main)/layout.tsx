@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Header from "@/component/header";
-import Footer from "./home/_components/footer";
+import Footer from "./_components/footer";
 import Intro from "@/component/intro";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {

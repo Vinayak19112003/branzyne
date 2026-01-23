@@ -21,7 +21,7 @@ export default function Header() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const items = [
-    { label: "Home", href: "/home" },
+    { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];

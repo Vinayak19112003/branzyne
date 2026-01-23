@@ -158,7 +158,7 @@ const Footer = () => {
                             <h3 className="text-white font-medium mb-4 text-lg">Pages</h3>
                             <ul className="space-y-2 text-base">
                                 <li>
-                                    <a href="/home" className="text-gray-400 hover:text-purple-500 transition-colors">
+                                    <a href="/" className="text-gray-400 hover:text-purple-500 transition-colors">
                                         Home
                                     </a>
                                 </li>
